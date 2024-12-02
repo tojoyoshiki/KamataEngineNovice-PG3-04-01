@@ -4,7 +4,7 @@
 int IScene::sceneNo = TITLE;
 
 //仮想デストラクタ定義
-IScene::~IScene() {}
+IScene::~IScene() {};
 
 //シーン番号ゲッター
 int IScene::GetSceneNo() { return sceneNo; }
