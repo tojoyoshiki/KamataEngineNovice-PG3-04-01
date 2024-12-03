@@ -21,6 +21,6 @@ void Bullet::Update() {
 
 void Bullet::Draw() const{
     if (active_) {
-        Novice::DrawBox(x_ - 5, y_ - 10, 10, 20, 0.0f, 0xFFFF00, kFillModeSolid);
+        Novice::DrawBox(x_ - 5, y_ - 10, 10, 20, 0.0f, WHITE, kFillModeSolid);
     }
 }

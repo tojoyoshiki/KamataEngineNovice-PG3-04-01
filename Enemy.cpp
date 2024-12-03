@@ -23,7 +23,7 @@ void Enemy::Update() {
 
 void Enemy::Draw() {
     if (alive_) {
-        Novice::DrawBox(x_ - 15, y_ - 15, 30, 30, 0.0f, 0xFF0000, kFillModeSolid);
+        Novice::DrawBox(x_ - 15, y_ - 15, 30, 30, 0.0f, WHITE, kFillModeSolid);
     }
 }
 

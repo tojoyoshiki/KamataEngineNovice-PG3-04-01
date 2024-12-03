@@ -49,12 +49,11 @@ void StageScene::Update(char* keys, char* preKeys) {
 
 void StageScene::Draw() {
 	if (sceneNo == STAGE) {
-		Novice::ScreenPrintf(0, 0, "Title Scene");
-		Novice::ScreenPrintf(0, 30, "Push Space");
-	}
-	else if (sceneNo == CLEAR) {
-		player_.Draw();
+		Novice::ScreenPrintf(0, 0, "Stage Scene");
+		Novice::ScreenPrintf(0, 30, "Push E");
 		enemy_.Draw();
+		player_.Draw();
+
 		for (const auto& bullet : bullets_) {
 			bullet.Draw();
 		}
