@@ -43,6 +43,9 @@ int GameManager::Run() {
 		/// ↑更新処理ここまで
 
 		/// ↓描画処理ここから
+		if (prevSceneNo_ != currentSceneNo_) {
+			Novice::ScreenPrintf(10, 10, "Scene changed to: %d", currentSceneNo_);
+		}
 		//シーンごとの描画処理
 		sceneArr_[currentSceneNo_]->Draw();
 		/// ↑描画処理ここまで

@@ -1,5 +1,10 @@
 #pragma once
 #include "IScene.h"
+#include "Player.h" 
+#include "Enemy.h"   
+#include "Bullet.h"  
+#include <vector>
+
 
 /// <summary>
 /// ISceneクラスを継承したStageSceneを宣言
@@ -16,6 +21,11 @@ public://メンバ関数
 
 	///描画処理
 	void Draw() override;
+
+private:
+	Player player_;                   // プレイヤー
+	std::vector<Bullet> bullets_;     // 弾丸リスト
+	Enemy enemy_;                     // 敵
 
 };
 
